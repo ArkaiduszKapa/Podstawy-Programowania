@@ -9,7 +9,7 @@ int Menu()
     cout<<"1. Dodaj element tablicy"<<endl;
     cout<<"2. Wstaw element tablicy"<<endl;
     cout<<"3. Usun element tablicy"<<endl;
-    cout<<"4. Wyœwietl elementy tablicy"<<endl;
+    cout<<"4. WyÅ“wietl elementy tablicy"<<endl;
     cout<<"5. Zapisz do pliku"<<endl;
     cout<<"6. Wczytaj z pliku"<<endl;
     cout<<"7. Wyjscie z programu"<<endl;
@@ -46,9 +46,9 @@ int main()
 
                 }
                 cout<<"Podaj wartosc elementu tablicy: ";
-                cin>>tmp[n];  //wstaw now¹ wartoœæ do tablicy (na koniec)
-                p = tmp; //przekopiuj adres nowej tablicy do wskaŸnika p
-                n++; //zwiêksz iloœæ elementów tablicy o 1
+                cin>>tmp[n];  //wstaw nowÂ¹ wartoÅ“Ã¦ do tablicy (na koniec)
+                p = tmp; //przekopiuj adres nowej tablicy do wskaÅ¸nika p
+                n++; //zwiÃªksz iloÅ“Ã¦ elementÃ³w tablicy o 1
                 break;
             }
         case 2:
@@ -81,8 +81,8 @@ int main()
                     delete[] p;
 
 
-                p = tmp; //przekopiuj adres nowej tablicy do wskaŸnika p
-                n++; //zwiêksz iloœæ elementów tablicy o 1
+                p = tmp; //przekopiuj adres nowej tablicy do wskaÅ¸nika p
+                n++; //zwiÃªksz iloÅ“Ã¦ elementÃ³w tablicy o 1
                 break;
             }
         case 3:
@@ -93,7 +93,7 @@ int main()
                 cin>>index;
                 int * tmp = NULL;
                 tmp = new int[n-1];
-                if(p != NULL) //je¿eli istnieje poprzednia tablica to:
+                if(p != NULL) //jeÂ¿eli istnieje poprzednia tablica to:
                 {
                     for(int i=0, j = 0; i<n;i++)
                     {
@@ -104,12 +104,12 @@ int main()
                         }
 
                     }
-                    //usuñ poprzedni¹ tablicê
+                    //usuÃ± poprzedniÂ¹ tablicÃª
                     delete[] p;
 
                 }
 
-                p = tmp; //przekopiuj adres nowej tablicy do wskaŸnika p
+                p = tmp; //przekopiuj adres nowej tablicy do wskaÅ¸nika p
                 n--;
                 break;
             }
@@ -161,7 +161,7 @@ int main()
 
                 for (int i = 0; i < n; i++) {
                     if (!(plik >> p[i])) {
-                        cerr << "Blad odczytu danych z pliku." << endl;
+                        cout << "Blad odczytu danych z pliku." << endl;
                         plik.close();
                         delete[] p;
                         return 1;
